@@ -9,11 +9,11 @@
     @csrf
     @method('put')
      <h2 class="text-2x1 text-center py-4 mb-4 font-semibold">
-        Edit Option {{ $option->id }}
+        Edit Option {{ $option->id }}                                          <!--you get the id to edit-->
     </h2>
 
      <input type="text" class="my-2 w-full bg-gray-200 p-2 text-lg rounded placeholder-gray-900"
-            placeholder="Option" name="option" value="{{ $option->option }}">
+            placeholder="Option" name="option" value="{{ $option->option }}">   <!--option to edit-->
 
        
 
@@ -22,7 +22,7 @@
 
               <option selected disabled value="">-- Select a Category --</option>
 
-              @foreach ($categories as $id => $description)
+              @foreach ($categories as $id => $description)                      <!--we choose the category_id if we want to change it-->
                       <option value="{{ $id }}">{{ $description }}</option>
               @endforeach
        </select>
