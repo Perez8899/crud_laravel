@@ -13,6 +13,7 @@ Route::get('/', function () {
 Route::get('categories.index', [CategoriesController::class, 'index'])
     ->name('index');
 
+//view path to create
 Route::get('categories/create', [CategoriesController::class, 'create'])
     ->name('categories.create');
 
@@ -26,6 +27,7 @@ Route::resource('categories', CategoriesController::class);
 Route::get('options.index', [OptionsController::class, 'index'])
     ->name('options.index');
 
+//view path to create
 Route::get('options/create', [OptionsController::class, 'create'])
     ->name('options.create');
 
