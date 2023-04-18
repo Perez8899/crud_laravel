@@ -15,10 +15,10 @@
  
   </head>
   <body class="bg-gray-100 text-gray-800">
-   <!-- Menu de Navegacion-->
+   <!-- Navigation menu-->
    <nav class="h-16 flex justify-end py-4 px-16">
 
-    <!-- traemos el name de CategoriesController para que nos lleve a la ruta de categories-->
+    <!-- we get the name of CategoriesController to take us to the categories route-->
     <a href="{{ route('options.index')}}" class="border border-blue-500
            rounded px-4 pt-1 h-10 bg-white text-blue-500 font-semibold mx-2">
            Options</a>
